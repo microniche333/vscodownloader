@@ -1,0 +1,81 @@
+<html>
+<head>
+    <title>VSCO Downloader</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ae995a">
+    <meta name="theme-color" content="#eeeeee">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CK2V4DL8NT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-CK2V4DL8NT');
+    </script>
+
+
+    <meta name="msvalidate.01" content="E088AFCEA5FE601CC2DAFF22FB621307" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta name="description" content="Want to download an image or profile picture off VSCO? Just copy and paste a link here."/>
+    <meta name="keywords" content="vsco,download,downloader,image,right,click,context,menu,photography,camera,collection,feed"/>
+</head>
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <h1>VSCO Image Downloader</h1>
+            <p>Want to download an image or profile picture off VSCO?</p>
+            <p>Can't save from the mobile app or website?</p>
+            <p>Copy the URL to a VSCO image or profile and paste it below.</p>
+            <p>We'll display the image at the highest resolution available below.</p>
+            <p>Now supporting vs.co and vsco.co links</p>
+            <div class="input-group">
+                <span class="input-group-addon">https://</span>
+                <input type="text" class="form-control" id="main-input" placeholder="vsco.co/<user>/media/<id>" />
+                <span class="input-group-btn">
+                    <button id="random-btn" class="btn btn-default hidden-xs hidden-sm" type="button">Random Image</button>
+                </span>
+            </div>
+
+            <div class="loader">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="24px" height="30px" viewBox="0 0 24 30" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                    <rect x="0" y="0" width="4" height="20" fill="#333">
+                    <animate attributeName="opacity" attributeType="XML"
+                        values="1; .2; 1" 
+                        begin="0s" dur="0.6s" repeatCount="indefinite" />
+                    </rect>
+                    <rect x="7" y="0" width="4" height="20" fill="#333">
+                    <animate attributeName="opacity" attributeType="XML"
+                        values="1; .2; 1" 
+                        begin="0.2s" dur="0.6s" repeatCount="indefinite" />
+                    </rect>
+                    <rect x="14" y="0" width="4" height="20" fill="#333">
+                    <animate attributeName="opacity" attributeType="XML"
+                        values="1; .2; 1" 
+                        begin="0.4s" dur="0.6s" repeatCount="indefinite" />
+                    </rect>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-bottom:50px">
+        <h1 id="error-message"></h1>
+        <div id="original-image-wrapper">
+            <p>Click the image below and wait through the 10 second ad to download the full size image.</p>
+            <p class="subscript">(Promise it will work, just need help with server costs)</p>
+            <div class="col-xs-12">
+                <a href="" id="original-image">
+                    <img src="" class="img-responsive" />
+                </a>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="/app.d3c31f49dcdf6e4013e5.js"></script></body>
+</html>
